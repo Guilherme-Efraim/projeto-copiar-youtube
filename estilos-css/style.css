@@ -1,10 +1,130 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 header {
+    display: flex;
+    flex-flow: row nowrap;
     background-color: black;
 }
+
+/* #HeaderMenu { */
+    /* align-items: flex-end; */
+/* } */
+
+div#AtalhoParaMenu {
+    display: inline-block;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+div#AtalhoParaMenu > a > i {
+    font-size: 19px;
+    margin-top: 8px; /*pode haver erro*/
+}
+
+/*----------------------*/
+
+div#LogoPagInicial {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+div#LogoPagInicial > a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px; 
+    font-family: "Bebas Neue", sans-serif;
+}
+
+div#LogoPagInicial > a > i {
+    font-size: 27px;
+}
+
+/*----------------------*/
+
+section#HeaderMenu {
+    display: inline-block;
+    background-color: yellow;
+}
+
+div#BtnPesquisa {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+}
+
+div#BtnPesquisa > a {
+    /* margin-top: 8px; */
+}
+
+/*----------------------*/
+
+div#BtnPesquisaVoz {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+}
+
+div#BtnPesquisaVoz > a > i {
+    /* margin-top: 8px; */
+}
+
+/*----------------------*/
+
+div#BtnCriar {
+    display: inline-block;
+    height: 35px;
+    width: 70px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: red;
+}
+
+div#BtnCriar > a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#BtnCriar > a > i {
+    /* margin-top: 8px; */
+}
+
+/*----------------------*/
+
+div#BtnNotificacoes {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+}
+
+/*----------------------*/
+
+div#BtnPerfil {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+}
+
