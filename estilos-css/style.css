@@ -10,12 +10,8 @@
 header#ContainerPai {
     display: flex;
     justify-content: space-between;
-    height: 150px;
-    background-color: black;
-}
-
-header#ContainerPai div.ItemFilho {
-
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.925);
 }
 
 div#LogoFixo {
@@ -23,7 +19,6 @@ div#LogoFixo {
     display: inline-block;
     height: 55px;
     width: 190px;
-    /* background-color: white; */
 }
 
 /*----------------------*/
@@ -36,14 +31,16 @@ div#LogoFixo div#AtalhoParaMenu {
     text-align: center;
     height: 35px;
     width: 35px;
-    /* padding-top: 20px; */
     border-radius: 50%;
-    /* background-color: red */
 }
 
 div#AtalhoParaMenu > a > i {
     font-size: 19px;
     margin-top: 8px;
+}   
+
+div#AtalhoParaMenu:hover {
+    background-color: rgba(68, 68, 68, 0.651);
 }
 
 div#LogoFixo div#LogoPagInicial {
@@ -52,7 +49,6 @@ div#LogoFixo div#LogoPagInicial {
     left: 65px;
     display: inline-block;
     height: 35px;
-    /* margin-top: 15px; */
     border-radius: 10px;
     /* background-color: yellow */
 }
@@ -67,62 +63,62 @@ div#LogoPagInicial > a {
 /*----------------------*/
 
 header#ContainerPai div#MenuDoHeader {
-    height: 70px;
+    height: 55px;
     /* width: 500px; */
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-end;
-    background-color: yellow;
+    flex-shrink: 0;
+    flex-grow: 1;
+    /* background-color: yellow; */
 }
 
 /*----------------------*/
 
-/* div#AtalhoParaMenu > a > i {
-    font-size: 19px;
-    margin-top: 8px;
-} */
-
-/*----------------------*/
-
 div#BtnPesquisa {
-    /* display: inline-block; */
     height: 35px;
     width: 35px;
     text-align: center;
     border-radius: 50%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 div#BtnPesquisa > a > i {
     margin-top: 8px;
 }
 
+div#BtnPesquisa:hover {
+    background-color: rgba(68, 68, 68, 0.651);
+} 
+
 /*----------------------*/
 
 div#BtnPesquisaVoz {
-    /* display: inline-block; */
     height: 35px;
     width: 35px;
     text-align: center;
     border-radius: 50%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 div#BtnPesquisaVoz > a > i {
     margin-top: 8px;
 }
 
+div#BtnPesquisaVoz:hover {
+    background-color: rgba(68, 68, 68, 0.651);
+}
+
 /*----------------------*/
 
 div#BtnCriar {
-    /* display: inline-block; */
     position: relative;
     height: 35px;
     width: 70px;
     text-align: center;
     border-radius: 20px;
-    background-color: red;
+    /* background-color: red; */
 }
 
 div#BtnCriar > a {
@@ -134,33 +130,39 @@ div#BtnCriar > a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+div#BtnCriar:hover {
+    background-color: rgba(68, 68, 68, 0.651);
+}
+
 /*----------------------*/
 
 div#BtnNotificacoes {
-    /* display: inline-block; */
     height: 35px;
     width: 35px;
     text-align: center;
     border-radius: 50%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 div#BtnNotificacoes > a > i {
     margin-top: 8px;
 }
 
+div#BtnNotificacoes:hover {
+    background-color: rgba(68, 68, 68, 0.651);
+}
+
 /*----------------------*/
 
 div#BtnPerfil {
-    /* display: inline-block; */
     height: 35px;
     width: 35px;
     text-align: center;
     border-radius: 50%;
-    background-color: red;
+    background-color: rgb(219, 53, 53);
 }
 
 div#BtnPerfil > a > i {
-    margin-top: 8px;
+    margin-top: 9px;
 }
 
