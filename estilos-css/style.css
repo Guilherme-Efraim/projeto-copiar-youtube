@@ -7,58 +7,86 @@
     padding: 0px;
 }
 
-header {
+header#ContainerPai {
     display: flex;
-    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 150px;
     background-color: black;
 }
 
-/* #HeaderMenu { */
-    /* align-items: flex-end; */
-/* } */
+header#ContainerPai div.ItemFilho {
 
-div#AtalhoParaMenu {
-    display: inline-block;
-    text-align: center;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    background-color: red;
 }
 
-div#AtalhoParaMenu > a > i {
-    font-size: 19px;
-    margin-top: 8px; /*pode haver erro*/
+div#LogoFixo {
+    position: relative;
+    display: inline-block;
+    height: 55px;
+    width: 190px;
+    /* background-color: white; */
 }
 
 /*----------------------*/
 
-div#LogoPagInicial {
+div#LogoFixo div#AtalhoParaMenu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
     display: inline-block;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    /* padding-top: 20px; */
+    border-radius: 50%;
+    /* background-color: red */
+}
+
+div#AtalhoParaMenu > a > i {
+    font-size: 19px;
+    margin-top: 8px;
+}
+
+div#LogoFixo div#LogoPagInicial {
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    display: inline-block;
+    height: 35px;
+    /* margin-top: 15px; */
     border-radius: 10px;
-    background-color: yellow;
+    /* background-color: yellow */
 }
 
 div#LogoPagInicial > a {
     text-decoration: none;
     color: white;
-    font-size: 25px; 
+    font-size: 30px;
     font-family: "Bebas Neue", sans-serif;
-}
-
-div#LogoPagInicial > a > i {
-    font-size: 27px;
 }
 
 /*----------------------*/
 
-section#HeaderMenu {
-    display: inline-block;
+header#ContainerPai div#MenuDoHeader {
+    height: 70px;
+    /* width: 500px; */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
     background-color: yellow;
 }
 
+/*----------------------*/
+
+/* div#AtalhoParaMenu > a > i {
+    font-size: 19px;
+    margin-top: 8px;
+} */
+
+/*----------------------*/
+
 div#BtnPesquisa {
-    display: inline-block;
+    /* display: inline-block; */
     height: 35px;
     width: 35px;
     text-align: center;
@@ -66,14 +94,14 @@ div#BtnPesquisa {
     background-color: red;
 }
 
-div#BtnPesquisa > a {
-    /* margin-top: 8px; */
+div#BtnPesquisa > a > i {
+    margin-top: 8px;
 }
 
 /*----------------------*/
 
 div#BtnPesquisaVoz {
-    display: inline-block;
+    /* display: inline-block; */
     height: 35px;
     width: 35px;
     text-align: center;
@@ -82,13 +110,14 @@ div#BtnPesquisaVoz {
 }
 
 div#BtnPesquisaVoz > a > i {
-    /* margin-top: 8px; */
+    margin-top: 8px;
 }
 
 /*----------------------*/
 
 div#BtnCriar {
-    display: inline-block;
+    /* display: inline-block; */
+    position: relative;
     height: 35px;
     width: 70px;
     text-align: center;
@@ -97,34 +126,41 @@ div#BtnCriar {
 }
 
 div#BtnCriar > a {
+    position: absolute;
+    top: 8px;
+    left: 6px;
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div#BtnCriar > a > i {
-    /* margin-top: 8px; */
-}
-
 /*----------------------*/
 
 div#BtnNotificacoes {
-    display: inline-block;
+    /* display: inline-block; */
     height: 35px;
     width: 35px;
     text-align: center;
     border-radius: 50%;
     background-color: red;
+}
+
+div#BtnNotificacoes > a > i {
+    margin-top: 8px;
 }
 
 /*----------------------*/
 
 div#BtnPerfil {
-    display: inline-block;
+    /* display: inline-block; */
     height: 35px;
     width: 35px;
     text-align: center;
     border-radius: 50%;
     background-color: red;
+}
+
+div#BtnPerfil > a > i {
+    margin-top: 8px;
 }
 
