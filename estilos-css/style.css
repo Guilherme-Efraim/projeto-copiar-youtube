@@ -68,19 +68,24 @@ header#ContainerPai div#MenuDoHeader {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
     flex-shrink: 0;
     flex-grow: 1;
     /* background-color: yellow; */
 }
 
+div#MenuDoHeader div.ItemFilho {
+    /* flex-basis: 100px; */
+}
+
 /*----------------------*/
 
 div#BtnPesquisa {
+    /* flex-basis: 180px; */
     height: 35px;
     width: 35px;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 20px;
     /* background-color: red; */
 }
 
