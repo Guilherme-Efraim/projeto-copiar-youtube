@@ -81,9 +81,11 @@ div#MenuDoHeader div.ItemFilho {
 /*----------------------*/
 
 div#BtnPesquisa {
-    /* flex-basis: 180px; */
     height: 35px;
     width: 35px;
+    /* flex-shrink: 1; */
+    /* flex-grow: 0; */
+    /* flex-basis: 100px; */
     text-align: center;
     border-radius: 20px;
     /* background-color: red; */
