@@ -2,6 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+:root {
+    --fundo-principal: rgb(24, 24, 24);
+    --fundo-secundario: rgb(36, 36, 36);
+    --fundo-claro: rgba(36, 36, 36, 0.432);
+    --texto-white: white;
+    --text-black: black;
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -74,9 +83,6 @@ header#ContainerPai div#MenuDoHeader {
     /* background-color: yellow; */
 }
 
-div#MenuDoHeader div.ItemFilho {
-    /* flex-basis: 100px; */
-}
 
 /*----------------------*/
 
@@ -171,5 +177,11 @@ div#BtnPerfil {
 
 div#BtnPerfil > a > i {
     margin-top: 9px;
+}
+
+/*--------------------*/
+
+.menu-lateral {
+    background-color: var(--fundo-secundario);
 }
 
