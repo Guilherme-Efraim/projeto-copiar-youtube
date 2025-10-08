@@ -1,26 +1,32 @@
 @charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --fundo-principal: rgb(24, 24, 24);
-    --fundo-secundario: rgb(36, 36, 36);
-    --fundo-claro: rgba(36, 36, 36, 0.432);
+    --fundo-secundario: rgb(26, 26, 26);
+    --fundo-claro: rgb(65, 64, 64);
     --texto-white: white;
     --text-black: black;
+    --font-padrao: "Roboto", sans-serif;
 }
 
 
 * {
+    font-family: var(--font-padrao);
     margin: 0px;
     padding: 0px;
 }
 
 header#ContainerPai {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 70px;
     background-color: rgba(0, 0, 0, 0.925);
+    z-index: 3;
 }
 
 div#LogoFixo {
@@ -32,7 +38,7 @@ div#LogoFixo {
 
 /*----------------------*/
 
-div#LogoFixo div#AtalhoParaMenu {
+.AtalhoParaMenu {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -41,14 +47,20 @@ div#LogoFixo div#AtalhoParaMenu {
     height: 35px;
     width: 35px;
     border-radius: 50%;
+    z-index: 10;
 }
 
-div#AtalhoParaMenu > a > i {
+.AtalhoParaMenu.ativo {
+    top: 10px;
+    left: 10px;
+}
+
+.AtalhoParaMenu > a > i {
     font-size: 19px;
     margin-top: 8px;
 }   
 
-div#AtalhoParaMenu:hover {
+.AtalhoParaMenu:hover {
     background-color: rgba(68, 68, 68, 0.651);
 }
 
@@ -181,7 +193,44 @@ div#BtnPerfil > a > i {
 
 /*--------------------*/
 
+main {
+    background-color: yellow;
+    height: 100%;
+}
+
 .menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -235px;
+    width: 235px;
+    height: 100%;
     background-color: var(--fundo-secundario);
+    z-index: 9;
+}
+
+.menu-lateral.ativo {
+    left: 0;
+}
+
+.secoes {
+    margin-top: 40px;
+    padding: 0.7rem;
+    display: flex;
+    flex-flow: column nowrap;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.secoes-item a {
+    display: flex;
+    gap: 25px;
+    text-decoration: none;
+    padding: 0.7rem;
+    border-radius: 10px;
+    /* margin: 0.5rem; */
+    color: var(--texto-white);
+}
+
+.secoes-item a:hover {
+    background-color: var(--fundo-claro);
 }
 
